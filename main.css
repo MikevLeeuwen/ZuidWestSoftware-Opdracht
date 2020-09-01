@@ -1,0 +1,104 @@
+/* Fonts and sizes */
+html {
+    font-family: "Segoe UI", sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.resistanceForm {
+    margin:auto;
+    display:table;
+    padding: 15px 30px;
+    border: black 2px solid;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 450px) {
+    .resistanceForm {
+        display: block;
+        text-align: center;
+        margin: 5px;
+        padding: 15px 20px;
+    }
+}
+
+/* Form inputs */
+.formCalc input[type="radio"],
+.formCalc input[type="submit"] {
+    margin: 1em 0;
+}
+
+.formCalc .radiolabel {
+    margin-right:10px;
+    display:inline-block;
+}
+
+.formCalc input[type="number"] {
+    width:100px;
+    height:1.4em;
+    border-radius:10px;
+    padding: 1px 4px;
+}
+
+.formCalc input[type="submit"] {
+    background-color:#ffffff;
+    color:#000000;
+    border-color:#000000;
+    border-radius:10px;
+    padding: 0.8em 2em;
+    transition: 0.3s;
+    font-size:15px;
+}
+
+.formCalc input[type="submit"]:hover {
+    cursor: pointer;
+    background-color:#000000;
+    color:#ffffff;
+    border-color:#000000;
+}
+
+.formCalc input[type="number"]:focus,
+.formCalc input[type="submit"]:focus {
+    outline:none;
+}
+
+
+/* Form standard text */
+
+.formCalc div p {
+    display:inline-block;
+    width:150px;
+}
+
+
+/* Form errors */
+
+.formCalc .error {
+    background-color: #ffc7ce;
+    color: #9c0006;
+    padding: 3px 4px;
+    margin: 5px 0;
+    border: 1px #9c0006 solid;
+    border-radius:3px;
+}
+
+.formCalc input[type="number"].inputIncorrect {
+    /*background-color: #ffc7ce;*/
+    border-color: #9c0006;
+}
+
+@media only screen and (max-width:336px) {
+    .formCalc .error {
+        display: inline-block;
+    }
+}
+
+
+/* Form no errors */
+
+.formCalc .correct {
+    display: none !important;
+}
+
